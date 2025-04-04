@@ -24,3 +24,16 @@ function sendMail(){
 )
 .catch((err) => console.log(err));
 }
+
+let night = document.getElementById('moon');
+let htmlElement = document.documentElement;
+
+night.addEventListener('click', () => {
+    htmlElement.classList.toggle('dark');
+    if(htmlElement.className == 'hidden'){
+        night.src = '/assets/sun-solid.svg';
+    }
+    else{
+        night.src = './assets/night.png ';
+    }
+})

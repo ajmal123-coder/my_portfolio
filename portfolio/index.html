@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/artstation-brands.svg" type="image/x-icon">
   <title>Ajmal Sadath MK</title>
   <link rel="stylesheet" href="./styles/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,58 +20,59 @@
 </script>
 </head>
 
-<body>
+<body class="scroll-smooth dark:bg-black">
   <!-- main view div  -->
-   <div class=" w-full h-screen bg-gradient-to-t from-indigo-200 ">
+   <div class=" w-full h-screen bg-gradient-to-t from-indigo-200 dark:bg-black ">
       <!-- Navigation bar -->
-      <nav class="w-full fixed top-0 bg-white z-13">
+      <nav id="home"  class="w-full fixed top-0 bg-white z-13 dark:bg-black">
         <div class="container mx-auto py-5 flex items-center justify-between">
           <div class="  cursor-pointer ">
-            <span class="text-xl font-bold text-gray-800 relative left-5 md:text-2xl">Ajmal Sadath MK</span>
+            <span class="text-xl font-bold text-gray-800 relative left-5 dark:text-white md:text-2xl">Ajmal Sadath MK</span>
           </div>
-          <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
-            <li class="hover:text-gray-500"><a href="#">About</a></li>
-            <li class="hover:text-gray-500"><a href="#">Skill</a></li>
-            <li class="hover:text-gray-500"><a href="#">Works</a></li>
-            <li class="hover:text-gray-500"><a href="#">Contact</a></li>
+          <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase dark:text-white">
+            <li class="hover:text-gray-500"><a href="#about">About</a></li>
+            <li class="hover:text-gray-500"><a href="#skills">Skill</a></li>
+            <li class="hover:text-gray-500"><a href="#works">Works</a></li>
+            <li class="hover:text-gray-500"><a href="#contact">Contact</a></li>
           </ul>
-          <img src="./assets/night.png" alt="moon" class="hidden md:block w-4 cursor-pointer">
-          <div id="threeLine" class="space-y-1 md:hidden cursor-pointer absolute right-10">
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
+          <!-- <img id="moon" src="./assets/night.png" alt="moon" class="hidden md:block w-4 cursor-pointer dark:hide"> -->
+          <i id="moon" class="fa-solid fa-lightbulb hidden md:block w-4 cursor-pointer dark:text-white"></i>
+          <div id="threeLine" class="space-y-1 md:hidden cursor-pointer absolute right-10 dark:text-white">
+            <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+            <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+            <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
           </div>
           <ul id="menu" class="hidden bg-sky-800 absolute left-0 top-0 w-full p-5 rounded-b-3xl text-white mt-14 text-center">
-            <li class="hover:bg-sky-700 pt-5 pb-5 rounded-2xl"><a href="#">About</a></li>
-            <li class="hover:bg-sky-700 pt-5 pb-5 rounded-2xl"><a href="#">Skill</a></li>
-            <li class="hover:bg-sky-700 pt-5 pb-5 rounded-2xl"><a href="#">Works</a></li>
-            <li class="hover:bg-sky-700 pt-5 pb-5 rounded-2xl"><a href="#">Contact</a></li>
+            <li class="hover:bg-sky-700 pt-5 pb-5 rounded-2xl"><a href="#about">About</a></li>
+            <li class="hover:bg-sky-700 pt-5 pb-5 rounded-2xl"><a href="#skills">Skill</a></li>
+            <li class="hover:bg-sky-700 pt-5 pb-5 rounded-2xl"><a href="#works">Works</a></li>
+            <li class="hover:bg-sky-700 pt-5 pb-5 rounded-2xl"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
       <!-- home page Content -->
      <div class=" absolute flex flex-col h-full w-full justify-center items-center gap-5 ">
-        <p class=" cursor-none text-xl text-teal-800 lg:text-2xl">Hello I'm</p>
+        <p class=" cursor-none text-xl text-teal-800 dark:text-teal-100 lg:text-2xl">Hello I'm</p>
         <div class="cursor-pointer sm:flex gap-3 text-center ">
-          <p class="font-bold  text-teal-900 text-3xl lg:text-4xl">Ajmal Sadath </p>
-          <p class="font-light text-teal-900 sm:text-2xl md:text-3xl lg:text-4xl ">Mannil Kurikkal</p></div>
+          <p class="font-bold  text-teal-900 text-3xl dark:text-teal-100 lg:text-4xl">Ajmal Sadath </p>
+          <p class="font-light text-teal-900 dark:text-teal-100 sm:text-2xl md:text-3xl lg:text-4xl ">Mannil Kurikkal</p></div>
         <div class="flex flex-col gap-3 sm:flex-row" >
-          <button class="cursor-pointer text-white  w-35 p-2 rounded-3xl bg-sky-800  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg hover:bg-sky-600">Download CV</button>
-          <button class="text-white cursor-pointer  w-35 p-2 rounded-3xl bg-sky-800 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg hover:bg-sky-600">Contact Me</button>
+          <a href="./assets/mainImage.jpg" download="mainImage"><button class="cursor-pointer text-white  w-35 p-2 rounded-3xl bg-sky-800  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg hover:bg-sky-600">Download CV</button></a>
+          <a href="#contact"><button class="text-white cursor-pointer  w-35 p-2 rounded-3xl bg-sky-800 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg hover:bg-sky-600">Contact Me</button></a>
         </div>
         <div class="flex gap-5">
-          <a class="hover:scale-105 hover:shadow-lg" href="#"><img src="./assets/linkedinblue.svg" alt="linkdin" width="35px"></a>
-          <a class="hover:scale-105 hover:shadow-lg" href="#"><img src="./assets/github-day.svg" alt="github" width="35px"></a>
+          <a class="hover:scale-105 hover:shadow-lg" href="https://www.linkedin.com/in/ajmal-sadath-mk/"><img src="./assets/linkedinblue.svg" alt="linkdin" width="35px"></a>
+          <a class="hover:scale-105 hover:shadow-lg" href="https://github.com/ajmal123-coder"><img src="./assets/github-day.svg" alt="github" width="35px"></a>
         </div>
      </div>
 
    </div>
 <!-- About section -->
- <div class=" bg-white relative pt-10 w-full ml-5 sm:flex items-center mt-10 md:gap-1  ">
+ <div id="about" class=" bg-white relative pt-10 w-full ml-5 dark:bg-black sm:flex items-center mt-10 md:gap-1  ">
   <img src="./assets/graduation.jpg" alt="myImage" class="w-70 h-auto rounded-2xl ring-1 hover:shadow-2xl md:ml-5" >
   <div class=" flex flex-col pt-5 sm:pl-20 gap-5 lg:leading-6">
-    <p class=" font-bold text-xl text-teal-950 sm:text-2xl  md:text-3xl lg:text-4xl">About Me</p>
-    <p class=" font-light text-xl text-wrap mr-8 text-gray-900 md:leading-9">Hello! I’m a passionate Front-End Developer focused on creating visually appealing, responsive, and user-friendly web applications. I specialize in HTML5, CSS, JavaScript, and Tailwind CSS, crafting clean, efficient, and maintainable code to bring ideas to life. My goal is to build intuitive user interfaces that not only look great but also function seamlessly.
+    <p class=" font-bold text-xl text-teal-950 dark:text-white sm:text-2xl  md:text-3xl lg:text-4xl">About Me</p>
+    <p class=" font-light text-xl text-wrap mr-8 text-gray-900 dark:text-white md:leading-9">Hello! I’m a passionate Front-End Developer focused on creating visually appealing, responsive, and user-friendly web applications. I specialize in HTML5, CSS, JavaScript, and Tailwind CSS, crafting clean, efficient, and maintainable code to bring ideas to life. My goal is to build intuitive user interfaces that not only look great but also function seamlessly.
 
       I have a keen eye for detail and a deep understanding of modern web development practices. I enjoy working on dynamic layouts, interactive elements, and responsive designs to enhance user experiences across different devices. I’m always eager to learn new tools, frameworks, and technologies to stay ahead in the ever-evolving world of web development.
     
@@ -81,9 +83,10 @@
   </div>
  </div>
  <!-- skills section -->
-  <div class=" bg-white flex justify-center pt-20 md:font-bold text-4xl w-full"><p>SKILLS</p></div>
- <div class="w-auto m-5 pt-10 flex justify-center items-center font-bold text-2xl text-gray-900 gap-5 ">
-  <div class=" w-auto grid grid-cols-1 md:grid-cols-2 gap-10 ">
+<div id="skills" class=" bg-white flex justify-center pt-20 dark:bg-black md:font-bold text-4xl w-full">
+<p class="dark:text-white">SKILLS</p></div>
+ <div class="w-auto m-5 pt-10 flex justify-center items-center font-bold text-2xl text-gray-900 gap-5  dark:bg-black">
+  <div class=" w-auto grid grid-cols-1 md:grid-cols-2 gap-10 dark:text-white dark:bg-black ">
     <div class="w-auto flex flex-col justify-center items-center shadow-xl rounded-xl pb-3 border border-blue-200/50 transition delay-150 duration-300 ease-in-out hover:-translate-x-1 hover:scale-125 hover:shadow-lg">
       <img src="./assets/html5-day.svg" alt="html5logo" class="h-40">
       <p>HTML-5</p>
@@ -103,7 +106,7 @@
   </div>
  </div>
  <!-- project Section -->
-  <div class=" bg-white pt-20 flex justify-center md:font-bold text-4xl"><p>PROJECTS</p></div>
+  <div id="works" class=" bg-white pt-20 flex justify-center dark:bg-black md:font-bold text-4xl"><p>WORKS</p></div>
   <div class="w-auto grid gap-9 md:grid-cols-2 m-10 pt-10 ">
     <div class="w-auto shadow-2xl rounded-2xl md:p-5">
       <a href=""><img src="./assets/mainportfolio.jpg" alt="" class="rounded-2xl border border-blue-200/50 transition delay-150 duration-300 ease-in-out hover:-translate-x-1 hover:scale-115 hover:shadow-lg"></a>
@@ -122,37 +125,37 @@
     </div>
   </div>
 <!-- Contact me section -->
-<section class="bg-white pt-20 pb-20 space-y-20 sm:ml-5 md:flex justify-center gap-10 ">
-  <div class="w-auto bg-gray-200 p-6 rounded-2xl shadow-md space-y-5 ">
-    <p class="font-bold text-2xl text-gray-600">My Address</p>
-    <p class="text-gray-600 font-bold">Location : <span class="font-medium">Mannil Kurikkal(H), Thennala(PO),
+<section id="contact" class="bg-white pt-20 pb-20 space-y-20 dark:bg-black sm:ml-5 md:flex justify-center gap-10 ">
+  <div class="w-auto bg-gray-200 p-6 rounded-2xl shadow-md space-y-5 dark:bg-gray-600">
+    <p class="font-bold text-2xl text-gray-600 dark:text-white">My Address</p>
+    <p class="text-gray-600 font-bold dark:text-white">Location : <span class="font-medium">Mannil Kurikkal(H), Thennala(PO),
     <span >Malappuram,676508(PIN)</span></span></p>
-    <p class="text-gray-600"><span class="font-bold">City : </span>Kottakkal</p>
-    <p class="text-gray-600"><span class="font-bold">state : </span>Kerala</p>
-    <p class="text-gray-600"><span class="font-bold">Country : </span>India</p>
-    <p class="text-gray-600"><span class="font-bold">Email : </span>ajmlasadhath@gmail.com</p>
+    <p class="text-gray-600 dark:text-white"><span class="font-bold">City : </span>Kottakkal</p>
+    <p class="text-gray-600 dark:text-white"><span class="font-bold">state : </span>Kerala</p>
+    <p class="text-gray-600 dark:text-white"><span class="font-bold">Country : </span>India</p>
+    <p class="text-gray-600 dark:text-white"><span class="font-bold">Email : </span>ajmlasadhath@gmail.com</p>
   </div>
-  <div class="  bg-gray-200 p-6 rounded-2xl shadow-md sm:w-150">
-    <h2 class="text-2xl font-bold text-gray-600 mb-4 text-center">Contact Me</h2>
+  <div class="  bg-gray-200 p-6 rounded-2xl shadow-md dark:bg-black sm:w-150">
+    <h2 class="text-2xl font-bold text-gray-600 dark:text-white mb-4 text-center">Contact Me</h2>
     <div class="space-y-5">
       <div>
-        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+        <label for="name" class="block text-gray-700 dark:text-white font-medium mb-2">Name</label>
         <input type="text" id="name" name="name" placeholder=" Enter Your Name" required
-          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" />
+          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent dark:border-white" />
       </div>
 
       <div>
-        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+        <label for="email" class="block text-gray-700 dark:text-white font-medium mb-2">Email</label>
         <input type="email" id="email" name="email" placeholder="Your Email" required
-          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" />
+          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent dark:border-white" />
       </div>
 
       <div>
-        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+        <label for="message" class="block text-gray-700 dark:text-white font-medium mb-2">Message</label>
         <textarea id="message" name="message" rows="4" placeholder="Your Message" required
-          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"></textarea>
+          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent dark:border-white"></textarea>
       </div>
-
+ 
       <div class="text-center">
         <button type="submit" onclick="sendMail()"
           class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
@@ -169,7 +172,7 @@
       <p class="text-sm">&copy; 2025 Ajmal Sadath. All rights reserved.</p>
     </div>
     <div class="flex space-x-4">
-      <a href="hhttps://www.linkedin.com/in/ajmal-sadath-8ab578121/" target="_blank" class="hover:text-blue-500 transition duration-300">
+      <a href="https://www.linkedin.com/in/ajmal-sadath-mk/" target="_blank" class="hover:text-blue-500 transition duration-300">
         <img src="./assets/linkedinblue.svg" alt="linkdin" width="35px">
       </a>
       <a href="https://github.com/ajmal123-coder" target="_blank" class="hover:text-gray-400 transition duration-300">
