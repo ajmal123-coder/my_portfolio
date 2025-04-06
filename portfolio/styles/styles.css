@@ -257,14 +257,26 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-10 {
-    top: calc(var(--spacing) * 10);
+  .right-0 {
+    right: calc(var(--spacing) * 0);
   }
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
   .right-20 {
     right: calc(var(--spacing) * 20);
+  }
+  .right-40 {
+    right: calc(var(--spacing) * 40);
+  }
+  .right-50 {
+    right: calc(var(--spacing) * 50);
+  }
+  .right-70 {
+    right: calc(var(--spacing) * 70);
+  }
+  .right-100 {
+    right: calc(var(--spacing) * 100);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -343,12 +355,6 @@
   }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
-  }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
-  .h-1\/2 {
-    height: calc(1/2 * 100%);
   }
   .h-34 {
     height: calc(var(--spacing) * 34);
@@ -477,10 +483,6 @@
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .rounded-b-3xl {
-    border-bottom-right-radius: var(--radius-3xl);
-    border-bottom-left-radius: var(--radius-3xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -880,11 +882,6 @@
     @media (width >= 48rem) {
       --tw-font-weight: var(--font-weight-bold);
       font-weight: var(--font-weight-bold);
-    }
-  }
-  .lg\:h-screen {
-    @media (width >= 64rem) {
-      height: 100vh;
     }
   }
   .lg\:text-2xl {
